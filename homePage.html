@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeny</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    header {
+      background: url("https://images.unsplash.com/photo-1675395594169-c6b14260e271?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat bottom center fixed;
+      /*background: url("https://images.unsplash.com/photo-1675604550850-74e0b74ad7fd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat bottom center fixed;*/
+      background-size: cover;
+      height: 100vh;
+    }
+
+    svg {
+      bottom: -2px;
+      position: absolute;
+      z-index: 10;
+    }
+
+    h1 {
+      z-index: 10;
+      position: relative;
+
+      color: #fff;
+      text-align: center;
+      padding-top: 30vh;
+      margin: 0;
+      font-size: 7em;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 35, 30, 0.85);
+      z-index: 1;
+    }
+
+    /*button*/
+    button {
+      height: 70px;
+      width: 300px;
+      padding: 1.3em 3em;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 500;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      z-index: 10;
+    }
+
+    button:hover {
+      background-color: #c4af23;
+      box-shadow: 0 15px 20px rgba(225, 138, 7, 0.42);
+      color: #fff;
+      transform: translateY(-7px);
+    }
+
+    button:active {
+      transform: translateY(-1px);
+    }
+    .center {
+      padding-top: 25vh;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+        position: relative;
+    }
+</style>
+<body>
+<header>
+  <div class="overlay"></div>
+<!--  import svg title-->
+  <div class="center">
+    <img src="title.svg" alt="Greeny" style="width: clamp(200px,100%,800px); height: auto; position: relative; z-index: 5; filter: invert(1) brightness(2);">  <br>
+
+    <a href="title.svg" download="title.svg" style="text-decoration: none;">
+      <button> Télécharger l’app <br><br>maintenant
+        <span></span>
+      </button>
+    </a>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L60,202.7C120,213,240,235,360,234.7C480,235,600,213,720,197.3C840,181,960,171,1080,165.3C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+</header>
+
+<section style="padding: 4em 2em; background-color: #ffffff;">
+  <h2 style="text-align: center; font-size: 3em; color: #007d6f; margin-bottom: 0.5em;">Pourquoi télécharger Greeny ?</h2>
+  <p style="max-width: 800px; margin: auto; font-size: 1.2em; line-height: 1.6;">
+    Tu viens d'emménager ? Tu veux te débarrasser d’affaires sans gaspiller ? Tu veux faire des économies ?
+    <br><br>
+    <strong>Greeny</strong> est l’application indispensable des étudiants Ynov : donne, récupère, échange gratuitement des objets du quotidien (vêtements, vaisselle, électronique...).
+    <br><br>
+    Installe Greeny, trouve ce qu’il te faut près de chez toi, et participe à une communauté éco-responsable et solidaire !
+  </p>
+</section>
+
+<section style="padding: 4em 2em; background-color: #e1f4f2;">
+  <h2 style="text-align: center; font-size: 2.5em; color: #007d6f; margin-bottom: 1em;">Fonctionnalités clés</h2>
+  <ul style="max-width: 800px; margin: auto; font-size: 1.2em; line-height: 1.8;">
+    <li>👕 Donne et récupère des objets facilement</li>
+    <li>🎓 Accès exclusif pour les étudiants Ynov</li>
+    <li>💬 Système de messagerie intégré entre membres</li>
+    <li>📍 Carte interactive pour géolocaliser les dons</li>
+    <li>♻️ Collaboration avec déchetteries et associations locales</li>
+  </ul>
+</section>
+
+<section style="padding: 4em 2em; background-color: #ffffff;">
+  <h2 style="text-align: center; font-size: 2.5em; color: #007d6f; margin-bottom: 0.5em;">Un exemple concret</h2>
+  <p style="max-width: 800px; margin: auto; font-size: 1.2em; line-height: 1.6;">
+    Personnellement, je récupère des objets dans la rue. Grâce à ça, j’ai pu ramener des <strong>vêtements</strong>, un <strong>aspirateur</strong>, de la <strong>vaisselle</strong>, des <strong>ordinateurs portables</strong>, des <strong>Raspberry Pi</strong> et même une <strong>TV de 50 pouces</strong> fonctionnelle !<br><br>
+    Imagine si chaque étudiant avait accès à ce genre d’opportunités. C’est ce que Greeny propose : une plateforme gratuite, simple et éthique.
+  </p>
+</section>
+
+<div style="height: 5px; background-color: #007d6f; margin: 0;"></div>
+<footer style="text-align: center; padding: 10px; background-color: #000000; color: white; display: flex; justify-content: space-between; align-items: center;">
+  <img src="title2.svg" alt="Greeny" style="width: clamp(50px,100%,100px); height: auto; z-index: 5; filter: invert(1) brightness(2);">
+  <p style="font-size: 1.2em;">Construisons ensemble un campus plus vert, solidaire et innovant 🍃</p>
+</footer>
+
+</body>
+</html>
